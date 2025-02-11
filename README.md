@@ -13,3 +13,11 @@ LearnAble AI is an inclusive educational platform designed to support students w
 - **Web Summary using AI:** Summarizes web content to enhance learning efficiency.
 - **Audio-GPT:** Facilitates audio-based learning and interaction.
 - **Roadmap Generator:** Creates visually appealing and personalized learning pathways.
+
+## Added Features
+ - **SCRIPTIFY - Convert Text to Your Own Handwriting**
+📚 Libraries used
+html2canvas - Turns DOM into Canvas.
+jsPDF - To generate PDF from images.
+cypress - Testing Library
+serve - Start local server
