@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212; /* Dark black background */
+            color: #fff; /* White text color */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+        }
+
+        .container {
+            background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 600px;
+        }
+
+        h1 {
+            color: #f39c12; /* Orange header text */
+        }
+
+        form {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: #f39c12; /* Orange label text */
+        }
+
+        input[type="text"] {
+            width: calc(100% - 20px); /* Adjusted width to account for padding */
+            padding: 10px;
+            font-size: 16px;
+            border: none;
+            background-color: #333; /* Dark background for input */
+            color: #fff; /* White text color */
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+        }
+
+        button[type="submit"] {
+            background-color: #3498db; /* Blue button background */
+            color: #fff; /* White text color */
+            border: none;
+            padding: 12px 24px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #2980b9; /* Darker blue on hover */
+        }
+
+        h2 {
+            margin-top: 30px;
+            color: #f39c12; /* Orange header text */
+        }
+
+        ul {
+            padding: 0;
+            list-style-type: none;
+        }
+
+        li {
+            margin-bottom: 20px;
+        }
+
+        strong {
+            display: block;
+            margin-bottom: 10px;
+            color: #f39c12; /* Orange strong text */
+        }
+
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+
+        label {
+            display: inline-block;
+            margin-bottom: 5px;
+            color: #fff; /* White label text */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Generate a Quiz</h1>
+        <form method="post">
+            
+            <input type="text" id="topic" name="topic" required placeholder='Enter Topic'>
+            <button type="submit">Generate Quiz</button>
+        </form>
+
+        {% if questions %}
+            <h2>Quiz on {{ topic }}</h2>
+            <form action="{{ url_for('submit') }}" method="post">
+                <input type="hidden" name="questions" value='{{ questions | tojson | safe }}'>
+                <ul>
+                {% for question in questions %}
+                    <li>
+                        <strong>{{ question.question }}</strong>
+                        <ul>
+                        {% for option in question.options %}
+                            <li>
+                                <input type="radio" id="question-{{ loop.index0 }}-{{ loop.index }}" name="question-{{ loop.index0 }}" value="{{ option }}" required>
+                                <label for="question-{{ loop.index0 }}-{{ loop.index }}">{{ option }}</label>
+                            </li>
+                        {% endfor %}
+                        </ul>
+                    </li>
+                {% endfor %}
+                </ul>
+                <button type="submit">Submit Quiz</button>
+            </form>
+        {% endif %}
+    </div>
+</body>
+</html>
