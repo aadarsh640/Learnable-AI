@@ -16,8 +16,8 @@ LearnAble AI is an inclusive educational platform designed to support students w
 
 ## Added Features
  - **SCRIPTIFY - Convert Text to Your Own Handwriting**
-📚 Libraries used
-html2canvas - Turns DOM into Canvas.
-jsPDF - To generate PDF from images.
-cypress - Testing Library
-serve - Start local server
+## 📚 Libraries used
+- **html2canvas** - Turns DOM into Canvas.
+- **jsPDF** - To generate PDF from images.
+- **cypress** - Testing Library
+- **serve** - Start local server
