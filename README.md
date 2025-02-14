@@ -15,7 +15,13 @@ LearnAble AI is an inclusive educational platform designed to support students w
 - **Roadmap Generator:** Creates visually appealing and personalized learning pathways.
 
 ## Added Features
- - **SCRIPTIFY - Convert Text to Your Own Handwriting**
+ - **SCRIPTIFY - Convert Text to Your Own Handwriting on your selected paper**
+ - **CALMIFY - One stop solution to relief from your Stress**
+               Therapies: Audio, Reading, Yoga, Laughing, Talking, Laughing
+               Also,a feature to consult with best doctors online and 24/7 help available through us.
+  - **Motion care - Gesture controlled appliances with Aurodino and sensors**
+  - **Gestura - Converts sign language to text and vice versa**
+   
 ## 📚 Libraries used
 - **html2canvas** - Turns DOM into Canvas.
 - **jsPDF** - To generate PDF from images.
