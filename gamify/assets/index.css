@@ -1,0 +1,109 @@
+body{
+    background-image: url("../assets/bgImg.jpg");
+    font-family: comic sans MS;
+    color: aliceblue;
+}
+
+#gameSurf{
+    border: 2px solid whitesmoke;
+}
+
+#credits{
+    position: absolute;
+    top:90%;
+    margin:1%;
+}
+
+#linkdin{
+    width: 32px;
+    height:32px;
+}
+
+#social-media{
+    position: absolute;
+    padding-left: 2%;
+}
+
+#todo{
+    margin-top: 2%;
+    border:1px solid whitesmoke;
+    position: absolute;
+    top:55%;
+}
+
+#mike-container{
+    position: absolute;
+    left:80%;
+    top:86%;
+    border:3px solid whitesmoke;
+    border-radius: 100%;
+    padding: 1%;
+}
+
+#mike{
+    height: 55px;
+    width: 55px;
+}
+
+#uiSurf{
+    border: 2px solid whitesmoke;
+}
+
+#game-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#about{
+    position: absolute;
+    font-size: medium;
+    border:1px solid whitesmoke;
+    max-width: 25%;
+    top:15%;
+}
+
+#howto{
+    position: absolute;
+    left:68%;
+    top:5%;
+    font-size: medium;
+    padding: 3%;
+    border:1px solid whitesmoke
+}
+
+
+#game-title{
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+}
+
+#gameSurf{
+    background-color: rgb(39,39,54);
+}
+
+@media only screen and (max-width: 1026px) {
+    #howto{
+        display: none;
+    }
+
+    #about{
+        display: none;
+    }
+
+    #todo{
+        display: none;
+    }
+
+    #credits{
+        display: none;
+    }
+
+    #mike-container{
+        display: none;
+    }
+}
+

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/index.css">
+    <title>PacMan</title>
+    <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../assets/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div id="about">
+        <h1>Why PACMAN?</h1>
+        <ul>
+            <li>This Speech Recognition based PACMAN allows Persons With Disabilities to experience the CHILDHOOD blockbuster PACMAN using Intuitive Voice Commands!
+            </li>
+        </ul>
+    </div>
+
+    <div id="todo">
+        <h1>Whats Coming Next?</h1>
+        <ul>
+            <li>Procedural Level Generation for PacMan</li>
+            <li>Advanced commands:-"Up 4 Times"</li>
+            <li>More games Chrome:-T-REX,Flappy Bird!</li>
+        </ul>
+    </div>
+
+    <div id="credits">
+        Developed by
+        Chandradhar Rao!
+        <a href="https://www.linkedin.com/in/chandradhar-rao-23a0ba1b7/">
+            <span id="social-media"><img id="linkdin" src="../assets/linkedin.png" alt="linkdin profile"></span>
+        </a>
+    </div>
+
+    <div id="howto">
+        <h1>How to Play?</h1>
+        <p>Click on Mouse to enbale sound.</p>
+        <ul id="choices-to-play">
+            <li>To use Voice Commands,Say the Letter P to Start  playing and Say the below letters to Control PACMAN:
+                <ul id="controls-speech">
+                    <li>"UP"     - W</li>
+                    <li>"LEFT"   - A</li>
+                    <li>"BOTTOM" - S</li>
+                    <li>"RIGHT"  - D</li>
+                </ul>
+            </li>
+            <br>
+            <li>To use WASD keyboard movement,PRESS P to Start!</li>
+        </ul>
+    </div>
+    <div id="game-container">
+        <h1 id="game-title">PacMan</h1>
+        <canvas id="gameSurf"></canvas>
+        <br>
+        <canvas id="uiSurf"></canvas>
+        <br>
+    </div>
+    <h3 id="score">Score </h3>
+    <div id='mike-container'>
+        <img id='mike' src="../assets/mike.png">
+    </div>
+    <script src="Engine.js" type="module"></script>
+</body>
+</html>
