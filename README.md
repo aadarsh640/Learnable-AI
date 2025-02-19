@@ -18,8 +18,10 @@ LearnAble AI is an inclusive educational platform designed to support students w
  - **SCRIPTIFY - Convert Text to Your Own Handwriting on your selected paper**
  - **CALMIFY - One stop solution to relief from your Stress**,
                **Therapies**: Audio, Reading, Yoga, Laughing, Talking, Laughing, Doctor consultation
-  - **Motion care - Gesture controlled appliances with Aurodino and sensors**
-  - **Gestura - Converts sign language to text and vice versa**
+ - **GAMIFY -  Voice based Controller using Speech Recognition**
+ - **Motion care - Gesture controlled appliances with Aurodino and sensors**
+ - **Gestura - Converts sign language to text and vice versa**
+    
    
 ## 📚 Libraries used
 - **html2canvas** - Turns DOM into Canvas.
